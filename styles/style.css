@@ -1,32 +1,32 @@
 html {
-    scroll-behavior: smooth;            /*sayfadaki geçişlerin akıcı bir olması için*/
+    scroll-behavior: smooth;            /*sayfadaki geÃ§iÅŸlerin akÄ±cÄ± olmasÄ± iÃ§in*/
 }
 
 /*navbar*/
 .c_navbar {
-    font-family: 'Poppins', sans-serif; /*navbarın yazı tipi*/
-    height:10vh;                        /*sayfada kapladığı alan*/
+    font-family: 'Poppins', sans-serif; /*navbarÄ±n yazÄ± tipi*/
+    height:10vh;                        /*sayfada kapladÄ±ÄŸÄ± alan*/
 }
 
-/*navbar içindeki logo*/
+/*navbar iÃ§indeki logo*/
 .logo{
    position: relative;
    left: 0;
-   height:18vh;                         /*logonun navbar içinde kapladığı yükseklik*/
+   height:18vh;                         /*logonun navbar iÃ§inde kapladÄ±ÄŸÄ± yÃ¼kseklik*/
 }
 
 /*slider*/
 .slider {
-    width: 70%;                         /*sliderin genişliğini ekrana göre yüzdelik olarak ayarlama*/
+    width: 70%;                         /*sliderin geniÅŸliÄŸini ekrana gÃ¶re yÃ¼zdelik olarak ayarlama*/
     display: block;
     margin: 20vh;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px;
     border-style: solid;
-    border-color: #5f85db;                      /*çerçeve rengi*/
-    border-radius: 10px;                        /*border köşelerini yuvarlak yapmak için*/
-    box-shadow: 0px 4px 8px rgba(21,0,42,255);  /*gölge rengi ve boyutları*/
+    border-color: #5f85db;                      /*Ã§erÃ§eve rengi*/
+    border-radius: 10px;                        /*border kÃ¶ÅŸelerini yuvarlak yapmak iÃ§in*/
+    box-shadow: 0px 4px 8px rgba(21,0,42,255);  /*gÃ¶lge rengi ve boyutlarÄ±*/
     background-color: rgba(53, 58, 64,0.4);
 }
 
@@ -37,18 +37,18 @@ footer {
     background-color: #26282b;
 }
 
-/*sayfanın başına dönmeyi sağlayan buton*/
+/*sayfanÄ±n baÅŸÄ±na dÃ¶nmeyi saÄŸlayan buton*/
 #myBtn {
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;                                   /*hmtl elemanlarının en üstünde gözükmesi için*/
+    z-index: 99;                                   /*hmtl elemanlarÃ½nÃ½n en Ã¼stÃ¼nde gÃ¶zÃ¼kmesi iÃ§in*/
     font-size: 18px;                                
     border: none;
     outline: none;
     background-color: #b9d2d2;
-    cursor: pointer;                                /*fare ile üstüne gelince cursor'un parmak olması için*/
+    cursor: pointer;                                /*fare ile Ã¼stÃ¼ne gelince cursor'un parmak olmasÃ½ iÃ§in*/
     padding: 15px;
     border-radius: 4px;
 }
@@ -57,13 +57,13 @@ footer {
     background-color: #555;
 }
 
-/*dosya yükleme alanı ve metni*/
+/*dosya yÃ¼kleme alanÃ½ ve metni*/
 #dosya_yukleme {
     height:100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;                  /*html elemanlarının aralarında eşit boşluk ve merkezde olması için*/
+    justify-content: space-evenly;                  /*html elemanlarÃ½nÃ½n aralarÃ½nda eÃ¾it boÃ¾luk ve merkezde olmasÃ½ iÃ§in*/
     margin: 20px;
     align-content: center;
     color: white;
@@ -74,7 +74,7 @@ footer {
     display:inline;
 }
 
-/*işlemi başlat butonu*/
+/*iÃ¾lemi baÃ¾lat butonu*/
 #start-button {
     margin: 30px 0px;
     display: none;
@@ -90,7 +90,7 @@ footer {
     left: 30%;
 }
 
-/*dosya yükleme alanı*/
+/*dosya yÃ¼kleme alanÃ½*/
 .drag-area {
     border: 2px dashed #5f85db;
     height: 500px;
@@ -144,11 +144,11 @@ footer {
     border-radius: 5px;
 }
 
-/*sayfanın en altında yer alan sosyal medya ikonları*/
+/*sayfanÃ½n en altÃ½nda yer alan sosyal medya ikonlarÃ½*/
 .social_footer {
     display: flex;
-    flex-direction: row;                             /*ikonların yan yana durması için*/
-    justify-content: center;                        /*ikonların sayfanın ortasına gelmesi*/
+    flex-direction: row;                             /*ikonlarÃ½n yan yana durmasÃ½ iÃ§in*/
+    justify-content: center;                        /*ikonlarÃ½n sayfanÃ½n ortasÃ½na gelmesi*/
     list-style-type: none;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -196,7 +196,7 @@ p {
     align-items: center;
 }
 
-/*hakkımızda*/
+/*hakkÃ½mÃ½zda*/
 .property-card {
     height: 18em;
     width: 18em;
@@ -243,7 +243,7 @@ p {
 
 .property-social-icons {
     position: absolute;
-    margin-left:43%;                         /*soldan boşluk vermek için*/
+    margin-left:43%;                         /*soldan boÃ¾luk vermek iÃ§in*/
     bottom:1em;
     color: #353a40;
 }
@@ -269,7 +269,7 @@ p {
 
 /* The Modal (background) */
 .modal {
-    display: none; /*başlangıçta gizli */
+    display: none; /*baÃ¾langÃ½Ã§ta gizli */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
