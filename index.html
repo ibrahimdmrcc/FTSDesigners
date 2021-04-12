@@ -11,38 +11,38 @@
         gtag('config', 'G-RT9ZCJEV66');
     </script>
 
-
+    <!--Style.css inject-->
     <link rel="stylesheet" href="styles/style.css">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Source+Code+Pro&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9db4861df4.js" crossorigin="anonymous"></script>
-
+    <!--Site basligi-->
     <title>FTS Designers</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
-<body style="background-color: #353941;">
 
+<!--Body baslangici-->
+<body style="background-color: #353941;">
+    
+    <!--Sag alt kosede yer alan en uste gitme butonu-->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
         <span style="color: #353a40;">
             <i class="fas fa-play fa-rotate-270"></i>
         </span>
     </button>
-
-    <!--<a id="top"></a>-->
-
+    
+    
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #5f85db; box-shadow: 0px 4px 8px rgba(21,0,42,255);">
-        <!--<div class="c_navbar">-->
+        <!--NavBar-->
         <div class="container c_navbar">
             <a class="navbar-brand" href="#"><img class="logo" src="assets/logo.png" alt="Alternate Text" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +50,7 @@
             </button>
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ml-auto">
+                    <!--Navbar ogeleri-->
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Nasıl Çalışır?<span class="sr-only">(current)</span></a>
                     </li>
@@ -65,16 +66,18 @@
         </div>
 
     </nav>
-
-
+    
+    <!--Slider section (Baslangic section)-->
     <section>
         <div id="slider" class="slider">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
+                    <!--Slayt ogeleri-->
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
+                <!--Slayt gorselleri-->
                 <div class="carousel-inner">
                     <div class="carousel-item active ">
                         <img src="assets/1.png" class=" deneme d-block w-20 mx-auto" alt="...">
@@ -97,13 +100,13 @@
             </div>
         </div>
 
-
-        <div id="dosya_yukleme" >
+        <!--Dosya yukleme section-->
+        <div id="dosya_yukleme">
             <div style="display:inline">
 
                 <h1><br />Arka planını silmek <br />istediğiniz fotoğrafı <br />yükleyin</h1>
                 <br />
-                <button  id="start-button">İşlemi Başlat</button>
+                <button id="start-button">İşlemi Başlat</button>
             </div>
             <div class="drag-area">
                 <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
@@ -115,15 +118,24 @@
 
         </div>
 
-    </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
 
-  
+    </section>
+    
+    <!--Footer baslangici-->
     <footer id="footer">
 
-        
+        <!--Ogeleri ortalamak icin center class-->
         <div class="center">
+            <!--Hakkimizda kismi icin property cards-->
             <div class="property-card">
+                <!--Github link-->
                 <a target="_blank" href="https://github.com/ibrahim-demirci">
+                    <!--Gorsel-->
                     <div class="property-image">
                         <img src="assets/ibo.png" alt="Alternate Text" />
                         <div class="property-image-title">
@@ -196,21 +208,23 @@
                 </a>
             </div>
         </div>
-        
-        <div class="social_footer_ul">
+        <!--Footerda yer alan sosyal medya linkleri-->
+        <div class="social_footer">
             <!--<li><p >FTS © 2021</p></li>--> 
             <a target="_blank" href="http://facebook.com"><i class="fab fa-facebook-f fa-lg"></i></a>
             <a target="_blank" href="http://twitter.com"><i class="fab fa-twitter fa-lg"></i></a>
             <a target="_blank" href="http://linkedin.com"><i class="fab fa-linkedin fa-lg"></i></a>
             <a target="_blank" href="http://instagram.com"><i class="fab fa-instagram fa-lg"></i></a>
         </div>
+        
+        <!--Footer en alt satir-->
         <div class="copyright">FTS Designers Inc. © 2021 </div>
 
     </footer>
-
+    
+    <!--JQuery & Bootstrap & Script inject-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
     <script src="index.js"></script>
 
 

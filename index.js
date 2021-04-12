@@ -1,7 +1,9 @@
+//sayfa başına gitmeyi sağlayan buton
 var mybutton = document.getElementById("myBtn");
 
 window.onscroll = function () { scrollFunction() };
 
+//belli bir pixel'den sonra butonu görünür yapan fonksiyon
 function scrollFunction() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         mybutton.style.display = "block";
@@ -10,16 +12,20 @@ function scrollFunction() {
     }
 }
 
+//butona basıldığında sayfanın başına dönen fonksiyon
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-function butonGoster() {
+//resim seçtikten sonra işlemi başlat butonunun görünürlüğünü değiştiren fonksiyon
+function butonGoster(kontrol) {
     var x = document.getElementById("start-button");
-    
+    console.log(kontrol)
+   	if(kontrol == 1)
         x.style.display = "inline-block";
-    
+    else
+    	x.style.display = "none";
     
 }
 
@@ -38,7 +44,7 @@ input.addEventListener("change", function () {
     //dosya secme islemi yapiliyor
     file = this.files[0];
     dropArea.classList.add("active");
-    butonGoster();
+    butonGoster(1);
     showFile(); //fonksiyon cagiriliyor
 });
 
@@ -61,7 +67,7 @@ dropArea.addEventListener("drop", (event) => {
     event.preventDefault(); //buton kullanimini engelliyor
     //yuklenen dosyalardan sadece 0. indisi seciyoruz.
     file = event.dataTransfer.files[0];
-    butonGoster();
+    butonGoster(1);
     showFile(); //fonksiyon cagiriliyor
 });
 
@@ -72,13 +78,42 @@ function showFile() {
         let fileReader = new FileReader(); //filereadin objesi olusturuluyor
         fileReader.onload = () => {
             let fileURL = fileReader.result; //fileUrl degiskenine yuklenen dosya kaynagi atanýyor.
-            let imgTag = `<img src="${fileURL}" alt="">`; //bir img tagi olusuturuluyor ve src ozelligine secilen dosya kaynagi atanýyor.
+            let imgTag = `<img id="secilmis-resim" src="${fileURL}" alt="">`; //bir img tagi olusuturuluyor ve src ozelligine secilen dosya kaynagi atanýyor.
             dropArea.innerHTML = imgTag; //olusturulan img tagi surukle birak alanýna ekleniyor.
         }
         fileReader.readAsDataURL(file);
     } else {
-        alert("Seçtiðiniz görsel resim deðil!");
+        alert("Seçtiğiniz görsel resim değil!");
+        butonGoster(0);
         dropArea.classList.remove("active");
         dragText.textContent = "Sürükle Bırak";
     }
+}
+
+//modal değişkeni
+var modal = document.getElementById("myModal");
+
+// modal'ı açacak buton'un alınması
+var btn = document.getElementById("start-button");
+
+// (x) tuşuna tıklandığı zaman kapanması için span değişkeni oluşturuluyor
+var span = document.getElementsByClassName("close")[0];
+
+// kullanıcı butona bastığında bu fonskiyon çağırılıyor
+btn.onclick = function() {
+  modal.style.display = "flex";
+  let islenmis = document.getElementById("secilmis-resim");
+  document.getElementById("img01").src = islenmis.src;
+}
+
+// (x) tuşuna basınca resmin kapanması için fonksiyon
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// resim dışına tıklandığı zaman kapanması için fonksiyon
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
