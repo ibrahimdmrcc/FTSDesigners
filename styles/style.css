@@ -43,12 +43,12 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;                                   /*hmtl elemanlarýnýn en üstünde gözükmesi için*/
+    z-index: 99;                                   /*hmtl elemanlarının en üstünde gözükmesi için*/
     font-size: 18px;                                
     border: none;
     outline: none;
     background-color: #b9d2d2;
-    cursor: pointer;                                /*fare ile üstüne gelince cursor'un parmak olmasý için*/
+    cursor: pointer;                                /*fare ile üstüne gelince cursor'un parmak olması için*/
     padding: 15px;
     border-radius: 4px;
 }
@@ -57,13 +57,13 @@ footer {
     background-color: #555;
 }
 
-/*dosya yükleme alaný ve metni*/
+/*dosya yükleme alanı ve metni*/
 #dosya_yukleme {
     height:100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;                  /*html elemanlarýnýn aralarýnda eþit boþluk ve merkezde olmasý için*/
+    justify-content: space-evenly;                  /*html elemanlarının aralarında eşit boşluk ve merkezde olması için*/
     margin: 20px;
     align-content: center;
     color: white;
@@ -74,7 +74,7 @@ footer {
     display:inline;
 }
 
-/*iþlemi baþlat butonu*/
+/*işlemi başlat butonu*/
 #start-button {
     margin: 30px 0px;
     display: none;
@@ -90,7 +90,7 @@ footer {
     left: 30%;
 }
 
-/*dosya yükleme alaný*/
+/*dosya yükleme alanı*/
 .drag-area {
     border: 2px dashed #5f85db;
     height: 500px;
@@ -144,11 +144,11 @@ footer {
     border-radius: 5px;
 }
 
-/*sayfanýn en altýnda yer alan sosyal medya ikonlarý*/
+/*sayfanın en altında yer alan sosyal medya ikonları*/
 .social_footer {
     display: flex;
-    flex-direction: row;                             /*ikonlarýn yan yana durmasý için*/
-    justify-content: center;                        /*ikonlarýn sayfanýn ortasýna gelmesi*/
+    flex-direction: row;                             /*ikonların yan yana durması için*/
+    justify-content: center;                        /*ikonların sayfanın ortasına gelmesi*/
     list-style-type: none;
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -243,7 +243,7 @@ p {
 
 .property-social-icons {
     position: absolute;
-    margin-left:43%;                         /*soldan boþluk vermek için*/
+    margin-left:43%;                         /*soldan boşluk vermek için*/
     bottom:1em;
     color: #353a40;
 }
@@ -269,7 +269,7 @@ p {
 
 /* The Modal (background) */
 .modal {
-    display: none; /*baþlangýçta gizli */
+    display: none; /*başlangıçta gizli */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
