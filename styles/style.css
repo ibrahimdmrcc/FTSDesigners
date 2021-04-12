@@ -103,10 +103,12 @@ footer {
     flex-direction: column;
 }
 
+/*dosya yükleme alanına fotoğraf atıldıktan sonra*/
 .drag-area.active {
     border: 2px solid #5f85db;
 }
 
+/*dosya yükleme alanındaki icon*/
 .drag-area .icon {
     font-size: 100px;
     color: #fff;
@@ -125,6 +127,7 @@ footer {
     margin: 10px 0 15px 0;
 }
 
+/*dosya yükleme alanı buton özellikleri*/
 .drag-area button {
     padding: 10px 25px;
     font-size: 20px;
@@ -137,6 +140,7 @@ footer {
     cursor: pointer;
 }
 
+/*dosya yükledikten sonra resmin özellikleri*/
 .drag-area img {
     height: 100%;
     width: 100%;
@@ -154,6 +158,7 @@ footer {
     font-family: 'Poppins', sans-serif;
 }
 
+/*footer bölümünde ki sosyal medya bölümü özellikleri*/
 .social_footer a {
     color: #CCC;
     padding: 8px;
@@ -196,7 +201,7 @@ p {
     align-items: center;
 }
 
-/*hakkýmýzda*/
+/*hakkımızda kısmı kart görünümleri*/
 .property-card {
     height: 18em;
     width: 18em;
@@ -205,6 +210,8 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    
+    /*kutu özellikleri*/
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -218,6 +225,7 @@ p {
     box-shadow: 0px 5px 7px rgba(0, 0, 0,0.5);
 }
 
+/*kart görünümündeki resimlerin özellikleri*/
 .property-image {
     height: 9em;
     width: 18em;
@@ -227,6 +235,7 @@ p {
     object-fit: fill;
 }
 
+/*kart görünümündeki alt yazı kısımlarının özellikleri*/
 .property-description {
     background-color: #353941;
     height: 9em;
@@ -241,6 +250,7 @@ p {
     text-align: center;
 }
 
+/*kartlarda ki sosyal medya ikon özellikleri*/
 .property-social-icons {
     position: absolute;
     margin-left:43%;                         /*soldan boşluk vermek için*/
@@ -267,22 +277,22 @@ p {
     opacity: 0.5;
 }
 
-/* The Modal (background) */
+/* Modal */
 .modal {
     display: none; /*başlangıçta gizli */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    position: fixed; 
+    z-index: 1; /* en üstten başlasın */
+    padding-top: 100px; /* modalın yeri belirleniyor*/
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* scroll ihtiyacı için */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
 }
 
-/* Modal Content (image) */
+/* Modal içeriği (fotoğraf) özellikleri */
 .modal-content {
     margin-left: 55vh;
     margin-bottom: 20vh;
@@ -293,7 +303,7 @@ p {
     filter: grayscale(100%);
 }
 
-/* Caption of Modal Image */
+/* Modal içindeki fotoğraf başlığı */
 #caption {
     margin: auto;
     display: block;
@@ -305,7 +315,7 @@ p {
     height: 50px;
 }
 
-/* Add Animation */
+/* Açılış animasyonu*/
 .modal-content, #caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -333,7 +343,7 @@ p {
     }
 }
 
-/* The Close Button */
+/* Kapatma butonu */
 .close {
     position: absolute;
     top: 15px;
@@ -351,7 +361,7 @@ p {
         cursor: pointer;
     }
 
-/* 100% Image Width on Smaller Screens */
+/* Modal içerisindeki resmin boyutu ayarlanıyor*/
 @media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
